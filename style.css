@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --header-background-color: #213448;
+    --font-color: #ECF0F1;
+    --content-background-color: #547792;
+
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    line-height: 1.5;
+    color: var(--font-color);
+}
+
+img, picture,video, canvas, svg{
+    width: 100%;
+    display: block;
+}
+
+input, button, textarea, select {
+    font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-background-color);
+    height: 100px;
+    padding: 15px;
+    gap: 10px;
+}
+
+.icon{
+    width: 4em;
+    height: 4em;
+    fill: var(--font-color);
+}
+
+.headerTitle{
+    flex: 1;
+}
+
+.addButton, 
+.remove{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--content-background-color);
+    color: var(--font-color);
+    float: right;
+}
+
+.library{
+    background-color: var(--content-background-color);
+    min-height: 80vh;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.card{
+    background-color: #234C6A;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* .remove{
+    padding: 8px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--content-background-color);
+    color: var(--font-color);
+} */
+
+.form{
+    background-color: #94B4C1 ;
+    color: var(--header-background-color);
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    line-height: 2;
+}
+
+input,
+.confirm,
+.closebtn{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.checkboxContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#status{
+    flex: 0;
+}
+
+.confirm,
+.closebtn{
+    /* display: block; */
+    margin-bottom: 5px;
+    background-color: var(--content-background-color);
+    color: var(--font-color);
+}

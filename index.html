@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bookshelf</title><path d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z" /></svg>
+            <h3 class="headerTitle">Odin Library</h3>
+            <button class="addButton">Add a book</button>
+        </div>
+
+        <dialog id="addBookDialog">
+            <h3>Add a new book</h3>
+            <form action="" method="dialog">
+                <div>
+                    <label for="title">Title</label><br>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div>
+                    <label for="author">Author</label><br>
+                    <input type="text" id="author" name="author">
+                </div>
+                <div>
+                    <label for="pages">Pages</label><br>
+                    <input type="number" id="pages" name="pages">
+                </div>
+                <div class="checkboxContainer">
+                    <label for="status">Have read? </label>
+                    <input type="checkbox" id="status" name="status">
+                </div>
+
+                <button class="confirm">Add book</button>
+                <button class="closebtn">Close</button>
+            </form>
+        </dialog>
+
+        <div class="library">
+            <div class="books">
+                <div class="card">
+                    <div class="book-title">Atomic Habits</div>
+                    <div class="author">James Clear</div>
+                    <div class="pages">546</div>
+                    <div class="status">read</div>
+                    <button class="remove">remove</button>
+                </div>
+
+                <div class="card">
+                    <div class="book-title">Atomic Habits</div>
+                    <div class="author">James Clear</div>
+                    <div class="pages">546</div>
+                    <div class="status">read</div>
+                    <button class="remove">remove</button>
+                </div>
+
+                <div class="card">
+                    <div class="book-title">Atomic Habits</div>
+                    <div class="author">James Clear</div>
+                    <div class="pages">546</div>
+                    <div class="status">read</div>
+                    <button class="remove">remove</button>
+                </div>
+
+                <div class="card">
+                    <div class="book-title">Atomic Habits</div>
+                    <div class="author">James Clear</div>
+                    <div class="pages">546</div>
+                    <div class="status">read</div>
+                    <button class="remove">remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="myScript.js"></script>
+</html>
