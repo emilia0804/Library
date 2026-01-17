@@ -1,3 +1,3 @@
 # Library
 
-my small library app using JavaScript constructor and functions
+A simple library management web app built using JavaScript constructors and functions

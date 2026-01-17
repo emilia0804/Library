@@ -42,6 +42,8 @@ input, button, textarea, select {
     height: 100px;
     padding: 15px;
     gap: 10px;
+    box-shadow: 0 4px 5px rgb(28, 68, 117);
+    position: relative;
 }
 
 .icon{
@@ -55,13 +57,19 @@ input, button, textarea, select {
 }
 
 .addButton, 
-.remove{
+.remove,
+.statusbtn{
     padding: 10px;
     border-radius: 5px;
     border: none;
     background-color: var(--content-background-color);
     color: var(--font-color);
-    float: right;
+}
+
+.addButton:hover, 
+.remove:hover,
+.statusbtn:hover {
+    background-color: rgb(47, 95, 152);
 }
 
 .library{
@@ -73,7 +81,7 @@ input, button, textarea, select {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     gap: 25px;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .card{
@@ -82,22 +90,31 @@ input, button, textarea, select {
     border-radius: 10px;
 }
 
-/* .remove{
-    padding: 8px;
-    float: right;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--content-background-color);
-    color: var(--font-color);
-} */
+.card:hover{
+    box-shadow: 2px 2px 8px var(--header-background-color);
+}
 
-.form{
+.buttons{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.statusbtn{
+    flex: 1;
+}
+
+#addBookDialog{
     background-color: #94B4C1 ;
     color: var(--header-background-color);
     padding: 20px;
     width: 50%;
     margin: auto;
     line-height: 2;
+    margin-top: 80px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(116, 113, 113);
 }
 
 input,
@@ -109,20 +126,27 @@ input,
     padding: 5px;
 }
 
+#addBookDialog input:focus{
+    border: 2px solid var(--content-background-color);
+    outline: none;
+}
+
 .checkboxContainer{
     display: flex;
     align-items: center;
     gap: 5px;
-}
+} 
 
 #status{
     flex: 0;
-}
+} 
 
 .confirm,
 .closebtn{
-    /* display: block; */
+    margin-top: 15px;
     margin-bottom: 5px;
     background-color: var(--content-background-color);
     color: var(--font-color);
 }
+
+
