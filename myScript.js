@@ -121,8 +121,8 @@ display.addEventListener("click", (e) => {
   }
 });
 
-addBookToLibrary("Economics for Engineers", "Partha Chatterjee", 470, false);
-addBookToLibrary("Economics for Engineers", "HL Bhatia & SN Maheshwari", 340, true);
-addBookToLibrary("Data Structures and Algorithms", "Chandan Banerjee & Atanu Das", 634, false);
+addBookToLibrary("Clean Code", "Robert C. Martin", 464, false);
+addBookToLibrary("You Don't Know JS Yet", "Kyle Simpson", 176, true);
+addBookToLibrary("JavaScript: The Good Parts", "Douglas Crockford", 634, false);
 displayBooks();
 
